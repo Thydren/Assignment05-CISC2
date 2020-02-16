@@ -40,3 +40,14 @@ console.log(sum(range(1,10)));
 // let arrayValue = [1, 2, 3, 4, 5];
 // reverseArrayInPlace(arrayValue);
 // console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
+
+const reverseArray = list => {
+    let reverseList = [];
+
+    for (let index = list.length -1; index >= 0; index--){
+        reverseList.push(list[index]);
+    }
+
+    return reverseList;
+}
+console.log(reverseArray(['A', 'B', 'C']));
